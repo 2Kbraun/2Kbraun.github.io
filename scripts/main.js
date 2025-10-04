@@ -34,6 +34,10 @@ if (!localStorage.getItem("name")) {
     myHeading.textContent = `Lets love Lain, ${storedName}`;
 }
 
+const paragraph = document.querySelector("reverse");
+
 myButton.addEventListener("click", () => {
+    reversedText = reverse.textContent.split("").reverse("").join("");
+    reverse.textContent = reversedText
     setUserName();
 });
